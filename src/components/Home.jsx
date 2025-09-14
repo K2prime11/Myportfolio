@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import "./home.css"; // for cursor styling
+import "./home.css"; 
 
 function Home() {
   const fullText = "Aspiring Full Stack Developer";
