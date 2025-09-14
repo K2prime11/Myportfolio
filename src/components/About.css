@@ -1,0 +1,37 @@
+/* Container to center content */
+.heading{
+  color: #ffffff;
+}
+
+.about-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 35vh; 
+    padding: 20px;
+    overflow: hidden;
+    cursor: default;
+    
+  }
+  
+  /* Card styling */
+  .about-card {
+    background-color: rgba(0, 0, 0, 0.489);
+    max-width: 800px;
+    padding: 30px 40px;
+    border-radius: 12px;
+    text-align: center;
+  }
+
+  .about-card h2 {
+    margin-bottom: 20px;
+    color: #ffffff;
+    font-size: 2rem;
+  }
+  
+  .about-card p {
+    color: #ffffff;
+    line-height: 1.7;
+    font-size: 1.1rem;
+  }
+  

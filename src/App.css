@@ -1,0 +1,136 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.app-container {
+    background-image: url("./assets/bg2.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    font-family: Arial, sans-serif;
+}
+
+#nameId {
+    margin: 0px;
+    color: #ffffff;
+    text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.7);
+    position: relative;
+    transition: color 0.3s ease;
+}
+
+#nameId::after {
+    content: "";
+    position: absolute;
+    width: 0;
+    height: 2px;
+    bottom: -5px;
+    left: 0;
+    background-color: #ffffff;
+    transition: width 0.3s ease;
+}
+
+#nameId:hover {
+    color: #736767;
+    cursor: pointer;
+}
+
+#nameId:hover::after {
+    width: 100%;
+}
+
+nav {
+    background-color: rgba(0, 0, 0, 0.489);
+    padding: 15px 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav h1 {
+    font-size: 24px;
+    color: #ffffff;
+    text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.7);
+}
+
+nav a {
+    text-decoration: none;
+    color: #ffffff;
+    font-weight: bold;
+    margin-left: 20px;
+    text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.7);
+    position: relative;
+    transition: color 0.3s ease;
+}
+
+nav a::after {
+    content: "";
+    position: absolute;
+    width: 0;
+    height: 2px;
+    bottom: -5px;
+    left: 0;
+    background-color: #ffffff;
+    transition: width 0.3s ease;
+}
+nav a:hover::after {
+    width: 100%;
+}
+
+/* Main content area */
+main {
+    flex: 1;
+    padding: 20px;
+}
+
+h1 {
+    color: #333;
+    text-align: center;
+    margin-top: 50px;
+}
+
+/* Footer styling */
+footer {
+    height: 20px;
+    background-color: rgba(0, 0, 0, 0.489);
+    padding: 20px 30px;
+}
+
+footer nav {
+    height: 0px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: none;
+}
+
+footer p {
+    color: #ffffff;
+    margin: 0;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    position: relative;
+    transition: color 0.3s ease;
+}
+
+footer p::after {
+    content: "";
+    position: absolute;
+    width: 0;
+    height: 2px;
+    bottom: -5px;
+    left: 0;
+    background-color: #ffffff;
+    transition: width 0.3s ease;
+}
+footer a {
+    color: #ffffff;
+    font-size: 24px;
+    margin-left: 50px;
+    
+}
+

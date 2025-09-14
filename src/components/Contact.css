@@ -1,0 +1,74 @@
+.heading{
+  color: #ffffff;
+  font-size: 45px;
+}
+.contact-container {
+  text-align: center;
+  padding: 60px 20px;
+  max-width: 600px;
+  margin: auto;
+  font-family: Arial, sans-serif;
+  background-color: rgba(0, 0, 0, 0.489);
+  margin-top: 10px;
+  border-radius: 20px;
+}
+
+.contact-container h2 {
+  font-size: 40px;
+  margin-bottom: 20px;
+  color: #e2d1d1;
+  cursor: default;
+}
+
+.contact-container p {
+  font-size: 1.2rem;
+  color: #ffffff;
+  margin-bottom: 40px;
+  cursor: default;
+}
+
+.button-group {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+}
+
+.hover-button {
+  position: relative;
+}
+
+.hover-button button {
+  font-size: 1.8rem;
+  background-color: #0077b5;
+  border: none;
+  color: #fff;
+  padding: 15px;
+  border-radius: 50%;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.hover-button button:hover {
+  background-color: #005582;
+  transform: scale(1.1);
+}
+
+.tooltip {
+  visibility: hidden;
+  background: #333;
+  color: #fff;
+  padding: 8px 12px;
+  border-radius: 5px;
+  position: absolute;
+  bottom: 150%;
+  left: 50%;
+  transform: translateX(-50%);
+  opacity: 0;
+  white-space: nowrap;
+  transition: opacity 0.3s ease;
+}
+
+.hover-button:hover .tooltip {
+  visibility: visible;
+  opacity: 1;
+}
