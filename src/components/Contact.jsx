@@ -1,6 +1,6 @@
 import React from "react";
-import "./contact.css";
 import { FaLinkedin, FaGithub, FaEnvelope, FaPhone } from "react-icons/fa";
+import "./contact.css"
 
 function Contact() {
   const email = "karthikeyankums@gmail.com";

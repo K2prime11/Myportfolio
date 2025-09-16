@@ -5,7 +5,8 @@ import jsImg from "../assets/js1.png";
 import reactImg from "../assets/react.png";
 import nodeImg from "../assets/node.png";
 import sqlImg from "../assets/mysql.png";
-import "./skills.css";
+
+import "./skills.css"
 
 function Skills() {
   const skills = [
@@ -41,3 +42,4 @@ function Skills() {
 }
 
 export default Skills;
+
