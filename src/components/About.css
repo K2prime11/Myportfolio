@@ -1,52 +1,53 @@
 /* ABOUT heading */
 .heading {
-  padding-top: 70px;
-  font-size: 3rem;
-  text-align: center;
-  background: linear-gradient(to right, #ffffff, #ffffff); /* white → grey */
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  background-clip: text; /* for Firefox */
-  font-weight: 700;
-  letter-spacing: 2px;
-}
-
-/* Main container */
-.about-container {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  min-height: 35vh;
-  padding: 20px;
-  overflow: hidden;
-  cursor: default;
-}
-
-/* Card styling */
-.about-card {
-  background-color: rgba(0, 0, 0, 0.5);
-  max-width: 800px;
-  padding: 30px 40px;
-  border-radius: 12px;
-  text-align: center;
-  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.4);
-  backdrop-filter: blur(6px); /* Glassmorphism effect */
-}
-
-/* Subheading (Full Stack Developer) */
-.about-card h2 {
-  margin-bottom: 20px;
-  font-size: 2rem;
-  background: linear-gradient(to left, #afafaf 0%, #ffaaaa 100%);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  font-weight: 900;
-}
-
-/* Paragraph text */
-.about-card p {
-  color: #dadada; /* simple light grey for readability */
-  line-height: 1.7;
-  font-size: 1.1rem;
-  text-align: justify;
-}
+    padding-top: 70px;
+    font-size: 3rem;
+    text-align: center;
+    background: linear-gradient(to right, #ffffff, #ffffff); /* white → grey */
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text; /* for Firefox */
+    font-weight: 700;
+    letter-spacing: 2px;
+  }
+  
+  /* Main container */
+  .about-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 35vh;
+    padding: 20px;
+    overflow: hidden;
+    cursor: default;
+  }
+  
+  /* Card styling */
+  .about-card {
+    background-color: rgba(0, 0, 0, 0.5);
+    max-width: 800px;
+    padding: 30px 40px;
+    border-radius: 12px;
+    text-align: center;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.4);
+    backdrop-filter: blur(6px); /* Glassmorphism effect */
+  }
+  
+  /* Subheading (Full Stack Developer) */
+  .about-card h2 {
+    margin-bottom: 20px;
+    font-size: 2rem;
+    background: linear-gradient(to left, #afafaf 0%, #ffaaaa 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-weight: 900;
+  }
+  
+  /* Paragraph text */
+  .about-card p {
+    color: #dadada; /* simple light grey for readability */
+    line-height: 1.7;
+    font-size: 1.1rem;
+    text-align: justify;
+  }
+  
