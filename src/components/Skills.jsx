@@ -1,7 +1,7 @@
 import React from "react";
-import htmlImg from "../assets/html.png";
+import htmlImg from "../assets/html1.png";
 import cssImg from "../assets/css.png";
-import jsImg from "../assets/js.png";
+import jsImg from "../assets/js1.png";
 import reactImg from "../assets/react.png";
 import nodeImg from "../assets/node.png";
 import sqlImg from "../assets/mysql.png";
@@ -19,9 +19,9 @@ function Skills() {
 
   return (
     <>
-      <div>
-        <h1 className="heading">MY SKILLSET</h1>
-        <section className="image-grid">
+      <h1 className="heading">MY SKILLSET</h1>
+      <div className="border">
+        <div className="image-grid">
           {skills.map((skill, index) => (
             <div className="flip-card" key={index}>
               <div className="flip-card-inner">
@@ -34,7 +34,7 @@ function Skills() {
               </div>
             </div>
           ))}
-        </section>
+        </div>
       </div>
     </>
   );

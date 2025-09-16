@@ -30,7 +30,6 @@ function Contact() {
         <h2>REACH OUT</h2>
         <p>
           I'm always interested in new challenges and creative opportunities.
-          <br />
           Feel free to reach out if you'd like to discuss a project or just say hello.
         </p>
 

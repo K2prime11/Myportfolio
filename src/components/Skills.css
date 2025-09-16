@@ -1,15 +1,25 @@
 .heading {
   cursor: default;
   color: rgb(255, 255, 255);
-margin-top: -10px;
+  margin-top: -40px;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.border {
+  background-color: rgba(0, 0, 0, 0.489);
+  width: 60vw;
+  height: 66vh;
+  margin-left: 350px;
+  border-radius: 25px;
+  padding-top: 20px; /* optional spacing for images inside */
 }
 
 .image-grid {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  margin-top: 60px;
-  width: 300px;
-  margin-left: 400px;
+  margin-top: 20px;
+  margin-left: 50px;
   gap: 180px;
 }
 .flip-card {

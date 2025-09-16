@@ -6,7 +6,7 @@
     height: 80vh;
     text-align: center;
     color: #ffffff;
-    text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.7);
+    text-shadow: 10px 5px 10px rgba(0, 0, 0, 0.7);
     font-size: 40px;
     cursor:default;
 }
@@ -14,8 +14,14 @@
 .main h1,
 .main h2,
 .main p {
-    margin: 0; /* Remove default margins */
+    margin: 0; 
     padding: 0;
+}
+.main h1{
+  background: linear-gradient(to left, #afafaf 0%, #ffaaaa 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  
 }
 .cursor {
     display: inline-block;

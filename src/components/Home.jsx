@@ -1,8 +1,6 @@
 import React, { useState, useEffect } from "react";
 import "./home.css";
 
-
-
 function Home() {
   const fullText = "Aspiring Full Stack Developer";
   const [displayedText, setDisplayedText] = useState("");
@@ -10,12 +8,20 @@ function Home() {
   const [isDeleting, setIsDeleting] = useState(false);
 
   useEffect(() => {
-    const speed = isDeleting ? 50 : 150;
+    let speed = isDeleting ? 50 : 150;
+
+    // If typing is complete, pause for 1 second
+    if (!isDeleting && index === fullText.length) {
+      speed = 1000; // pause 1 second
+    }
+
     const timeout = setTimeout(() => {
       if (!isDeleting) {
-        setDisplayedText(fullText.substring(0, index + 1));
-        setIndex(index + 1);
-        if (index + 1 === fullText.length) {
+        if (index < fullText.length) {
+          setDisplayedText(fullText.substring(0, index + 1));
+          setIndex(index + 1);
+        } else {
+          // After pause, start deleting
           setIsDeleting(true);
         }
       } else {
