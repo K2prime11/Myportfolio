@@ -9,8 +9,9 @@ function About() {
     <div className="about-container">
       <div className="about-card">
         <h2>Full Stack Developer</h2>
-        <hr />
-        <br />
+        <hr class="custom-line" />
+
+        <br/>
         <p>
           Skilled Full-Stack Developer proficient in building modern web
           applications from the ground up. On the front-end, I engineer

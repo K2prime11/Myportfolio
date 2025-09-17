@@ -3,7 +3,7 @@
     padding-top: 70px;
     font-size: 3rem;
     text-align: center;
-    background: linear-gradient(to right, #ffffff, #ffffff); /* white → grey */
+    background: linear-gradient(to right, #ffffff, #1e6224); /* white → grey */
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     background-clip: text; /* for Firefox */
@@ -37,17 +37,94 @@
   .about-card h2 {
     margin-bottom: 20px;
     font-size: 2rem;
-    background: linear-gradient(to left, #afafaf 0%, #ffaaaa 100%);
+    background: linear-gradient(to left, #ffffff 0%, #ffffff 100%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     font-weight: 900;
   }
   
+  .custom-line {
+   height: 3px;
+    background-color: rgb(162, 255, 0); 
+   
+  }
+  
+
   /* Paragraph text */
   .about-card p {
-    color: #dadada; /* simple light grey for readability */
+    color: #ffffff; /* simple light grey for readability */
     line-height: 1.7;
     font-size: 1.1rem;
     text-align: justify;
   }
+
+  /* =========================
+   LARGE MOBILES (500–600px)
+========================= */
+@media (min-width: 501px) and (max-width: 600px) {
+  .heading {
+    font-size: 2.5rem;
+    padding-top: 50px;
+  }
+
+  .about-card {
+    padding: 25px 30px;
+  }
+
+  .about-card h2 {
+    font-size: 1.8rem;
+  }
+
+  .about-card p {
+    font-size: 1rem;
+    text-align: left; /* professional alignment on mobile */
+  }
+}
+
+/* =========================
+   MEDIUM MOBILES (400–500px)
+========================= */
+@media (min-width: 401px) and (max-width: 500px) {
+  .heading {
+    font-size: 2rem;
+    padding-top: 40px;
+  }
+
+  .about-card {
+    padding: 20px 25px;
+  }
+
+  .about-card h2 {
+    font-size: 1.6rem;
+  }
+
+  .about-card p {
+    font-size: 0.95rem;
+    text-align: left;
+  }
+}
+
+/* =========================
+   SMALL MOBILES (<400px)
+========================= */
+@media (max-width: 400px) {
+  .heading {
+    font-size: 1.7rem;
+    padding-top: 35px;
+  }
+
+  .about-card {
+    padding: 15px 20px;
+  }
+
+  .about-card h2 {
+    font-size: 1.4rem;
+  }
+
+  .about-card p {
+    font-size: 0.9rem;
+    text-align: left;
+  }
+}
+
   

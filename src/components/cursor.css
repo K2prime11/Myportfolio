@@ -1,6 +1,7 @@
+/* cursor.css */
 body {
   cursor: none;
-  background: black;
+  background: rgba(0, 0, 0, 0.489);
 }
 
 .cursor-canvas {
@@ -10,5 +11,16 @@ body {
   width: 100vw;
   height: 100vh;
   pointer-events: none;
-  z-index: 9999; /* ensure ball is on top */
+  z-index: 9999;
+}
+
+/* Hide cursor effect on tablets & phones (≤1024px) */
+@media (max-width: 1024px) {
+  body {
+    cursor: auto; /* restore normal cursor */
+  }
+
+  .cursor-canvas {
+    display: none;
+  }
 }

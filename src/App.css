@@ -1,137 +1,312 @@
+/* Global Reset */
 * {
-    margin: 0;
-    padding: 0;
-    font-family: 'Montserrat', sans-serif;
+  margin: 0;
+  padding: 0;
+  font-family: "Michroma", sans-serif;
+  box-sizing: border-box;
 }
 
 .app-container {
-    background-image: url("./assets/bg4.png");
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-    min-height: 100vh;
-    display: flex;
-    flex-direction: column;
-    font-family: Arial, sans-serif;
+  background: linear-gradient(
+    160deg,
+    rgb(6, 10, 15) 0%,    /* almost black top */
+    rgb(85, 107, 47) 50%, /* olive green-mid */
+    rgb(50, 70, 30) 80%,  /* deeper olive shadow */
+    rgb(35, 50, 20) 100%  /* dark olive bottom */
+  );
+  min-height: 100vh;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  background-attachment: fixed;
+  background-size: cover;
+  background-position: center;
 }
 
+/* Name Highlight */
 #nameId {
-    margin: 0px;
-    color: #ffffff;
-    text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.7);
-    position: relative;
-    transition: color 0.3s ease;
+  margin: 0px;
+  color: #ffffff;
+  text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.7);
+  position: relative;
+  transition: color 0.3s ease;
 }
 
 #nameId::after {
-    content: "";
-    position: absolute;
-    width: 0;
-    height: 2px;
-    bottom: -5px;
-    left: 0;
-    background-color: #ffffff;
-    transition: width 0.3s ease;
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 2px;
+  bottom: -5px;
+  left: 0;
+  background-color: #ffffff;
+  transition: width 0.3s ease;
 }
 
 #nameId:hover {
-    color: #736767;
-    cursor: pointer;
+  color: rgb(85, 107, 47);
+  cursor: pointer;
 }
 
 #nameId:hover::after {
-    width: 100%;
+  width: 100%;
 }
 
+/* Navbar always on top */
 nav {
-    background-color: rgba(0, 0, 0, 0.489);
-    padding: 15px 30px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+  background-color: rgba(0, 0, 0, 0.489);
+  padding: 15px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+  width: 100%;
+  z-index: 1000; /* ✅ keeps navbar above background/cursor */
 }
 
 nav h1 {
-    font-size: 24px;
-    color: #ffffff;
-    text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.7);
+  font-size: 24px;
+  color: #ffffff;
+  text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.7);
+}
+
+.nav-links {
+  display: flex;
 }
 
 nav a {
-    text-decoration: none;
-    color: #ffffff;
-    font-weight: bold;
-    margin-left: 20px;
-    text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.7);
-    position: relative;
-    transition: color 0.3s ease;
+  text-decoration: none;
+  color: #ffffff;
+  font-weight: bold;
+  margin-left: 20px;
+  text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.7);
+  position: relative;
+  transition: color 0.3s ease;
 }
-
+nav a:hover {
+  color: rgb(85, 107, 47);
+}
 nav a::after {
-    content: "";
-    position: absolute;
-    width: 0;
-    height: 2px;
-    bottom: -5px;
-    left: 0;
-    background-color: #ffffff;
-    transition: width 0.3s ease;
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 2px;
+  bottom: -5px;
+  left: 0;
+  background-color: #ffffff;
+  transition: width 0.3s ease;
 }
 nav a:hover::after {
-    width: 100%;
+  width: 100%;
 }
 
-/* Main content area */
+/* Hamburger (mobile only) */
+.hamburger {
+  display: none;
+  flex-direction: column;
+  cursor: pointer;
+}
+
+.hamburger div {
+  width: 25px;
+  height: 3px;
+  background: #fff;
+  margin: 4px;
+  border-radius: 2px;
+}
+
+/* ✅ Mobile dropdown menu (only keep this once!) */
+.nav-links.mobile {
+  display: none;
+  flex-direction: column;
+  background-color: rgba(0, 0, 0, 0.95);
+  position: absolute;
+  top: 60px;
+  right: 15px;
+  width: 180px;
+  padding: 10px 0;
+  border-radius: 8px;
+  text-align: center;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.4);
+  z-index: 1500; /* ✅ ensures menu is clickable */
+}
+
+.nav-links.mobile a {
+  margin: 8px 0;
+  font-size: 15px;
+  padding: 8px 15px;
+  display: block;
+  text-align: center;
+}
+
+/* Main content */
 main {
-    flex: 1;
-    padding: 20px;
+  flex: 1;
+  padding: 20px;
 }
 
 h1 {
-    color: #333;
-    text-align: center;
-    margin-top: 50px;
+  color: #333;
+  text-align: center;
+  margin-top: 50px;
 }
 
-/* Footer styling */
+/* Footer */
 footer {
-    height: 20px;
-    background-color: rgba(0, 0, 0, 0.489);
-    padding: 20px 30px;
+  background-color: rgba(0, 0, 0, 0.489);
+  padding: 20px 30px;
+  width: 100%;
 }
 
 footer nav {
-    height: 0px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    background: none;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 30px;
+  background: none;
 }
 
 footer p {
-    color: #ffffff;
-    margin: 0;
-    display: flex;
-    align-items: center;
-    cursor: pointer;
-    position: relative;
-    transition: color 0.3s ease;
+  color: #ffffff;
+  margin: 0;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  position: relative;
+  transition: color 0.3s ease;
+  font-size: 14px;
 }
 
 footer p::after {
-    content: "";
-    position: absolute;
-    width: 0;
-    height: 2px;
-    bottom: -5px;
-    left: 0;
-    background-color: #ffffff;
-    transition: width 0.3s ease;
-}
-footer a {
-    color: #ffffff;
-    font-size: 24px;
-    margin-left: 50px;
-    
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 2px;
+  bottom: -5px;
+  left: 0;
+  background-color: #ffffff;
+  transition: width 0.3s ease;
 }
 
+footer a {
+  color: #ffffff;
+  font-size: 20px;
+  margin-left: 30px;
+}
+
+
+
+/* =========================
+   MOBILE FIXES (<600px)
+========================= */
+@media (max-width: 600px) {
+  .app-container {
+    background-size: cover;
+    background-position: top center;
+    min-height: 100vh;
+    width: 100%;
+  }
+
+  nav {
+    width: 100%;
+    padding: 10px 15px;
+  }
+
+  nav h1 {
+    font-size: 16px;
+  }
+
+  /* Show hamburger */
+  .hamburger {
+    display: flex;
+  }
+
+  /* Hide normal links */
+  .nav-links {
+    display: none;
+  }
+
+  /* Show dropdown */
+  .nav-links.mobile {
+    display: flex;
+  }
+
+  .nav-links.mobile a {
+    font-size: 14px;
+    padding: 10px 0;
+  }
+
+  /* Hero text smaller */
+  h1 {
+    font-size: 20px;
+    margin-top: 20px;
+  }
+
+  .highlight-name {
+    font-size: 26px;
+  }
+
+  footer {
+    padding: 10px;
+  }
+
+  footer p {
+    font-size: 10px;
+  }
+}
+/* =========================
+   TABLET FIXES (600px–1024px)
+========================= */
+@media (min-width: 600px) and (max-width: 1024px) {
+  /* Navbar */
+  nav {
+    padding: 12px 20px;
+  }
+
+  nav h1 {
+    font-size: 20px;
+  }
+
+  /* Keep normal links visible */
+  .nav-links {
+    display: flex;
+  }
+
+  /* Hide hamburger */
+  .hamburger {
+    display: none;
+  }
+
+  nav a {
+    font-size: 15px;
+    margin-left: 15px;
+  }
+
+  /* Content */
+  main {
+    padding: 30px;
+  }
+
+  h1 {
+    font-size: 24px;
+    margin-top: 30px;
+  }
+
+  .highlight-name {
+    font-size: 32px; /* slightly smaller than desktop */
+  }
+
+  /* Footer */
+  footer {
+    padding: 15px 20px;
+  }
+
+  footer p {
+    font-size: 12px;
+  }
+
+  footer a {
+    font-size: 18px;
+    margin-left: 20px;
+  }
+}
