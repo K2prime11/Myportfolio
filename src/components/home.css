@@ -1,54 +1,60 @@
 .main {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    height: 80vh;
-    text-align: center;
-    color: #ffffff;
-    text-shadow: 10px 5px 10px rgba(0, 0, 0, 0.7);
-    font-size: 40px;
-    cursor:default;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 80vh;
+  text-align: center;
+  color: #ffffff;
+  text-shadow: 10px 5px 10px rgba(0, 0, 0, 0.7);
+  font-size: 40px;
+  cursor: default;
 }
 
 .main h1,
 .main h2,
 .main p {
-    margin: 0; 
-    padding: 0;
+  margin: 0;
+  padding: 0;
 }
-.main h1{
-  
-    font-size: 3rem;
-    color: #fff;
-    background: url('../assets/fontbg.jpg') center;
-    background-size: cover;
-    background-clip: text;
-    color: transparent;
-    animation: animate 10s linear infinite;
-    font-size: 75px;
+.main h1 {
+  font-size: 3rem;
+  color: #fff;
+  background: url("../assets/fontbg.jpg") center;
+  background-size: cover;
+  background-clip: text;
+  color: transparent;
+  animation: animate 10s linear infinite;
+  font-size: 75px;
+  -webkit-box-reflect: below 1px linear-gradient(transparent, #0004);
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1), 0 10px 20px rgba(0, 0, 0, 0.2);
 }
 
 @keyframes animate {
-    to {
-        background-position-x: -200px;
-    }
+  to {
+    background-position-x: -200px;
+  }
 }
-  
 
 .cursor {
-    display: inline-block;
-    width: 1px;
-    background-color: black;
-    animation: blink 0.7s steps(1) infinite;
-    margin-left: 2px;
-  }
-  
-  @keyframes blink {
-    0%, 50%, 100% { opacity: 1; }
-    25%, 75% { opacity: 0; }
-  }
+  display: inline-block;
+  width: 1px;
+  background-color: black;
+  animation: blink 0.7s steps(1) infinite;
+  margin-left: 2px;
+}
 
+@keyframes blink {
+  0%,
+  50%,
+  100% {
+    opacity: 1;
+  }
+  25%,
+  75% {
+    opacity: 0;
+  }
+}
 
 /* =========================
    LARGE MOBILES (500–600px)
@@ -164,6 +170,3 @@
     height: 20px;
   }
 }
-
-
-  
