@@ -42,6 +42,7 @@ function Cursor() {
 
       requestAnimationFrame(animate);
     }
+    
     animate();
 
     return () => {
