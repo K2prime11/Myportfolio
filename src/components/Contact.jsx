@@ -49,7 +49,7 @@ function Contact() {
           </div>
 
           <div className="hover-button">
-            <a href="https://www.linkedin.com/in/karthikeyan-kumaran-931994224/">
+            <a href="https://www.linkedin.com/in/karthikeyan-kumaran-931994224/" target="_blank">
               <button>
                 <FaLinkedin />
               </button>
@@ -57,7 +57,7 @@ function Contact() {
             </a>
           </div>
           <div className="hover-button">
-            <a href="https://github.com/K2prime11">
+            <a href="https://github.com/K2prime11" target="_blank">
               <button>
                 < FaGithub/>
               </button>
